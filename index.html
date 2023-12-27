@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login System</title>
+</head>
+<body>
+    <div class="container my-5 text-center  ">
+ 
+    <div class="m-auto w-75 p-5">
+    
+
+
+        <div id="registrationForm" >
+            <h2>Registration</h2>
+            <form class="form-control bg-danger" id="registerForm">
+                <label for="name">Name:</label>
+                <input class="form-control m-3" placeholder="enter your name"  type="" id="name" required>
+                <label for="email">Email:</label>
+                <input class="form-control m-3"placeholder="enter your Email"  type="email" id="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input class="form-control m-3"placeholder="enter your Password" type="password" id="password" required>
+                <br>
+                <button class="btn w-100 border-1 border-dark  " type="button" onclick="register()">Register</button>
+            </form>
+        </div>
+    
+        <div id="loginForm" >
+            <h2>Login</h2>
+            <form  id="loginForm">
+                <label for="name">Name:</label>
+                <input class="form-control m-3" placeholder="enter your name"  type="" id="Name" required>
+                <label for="loginEmail">Email:</label>
+                <input class="form-control m-3" placeholder="enter your Email" type="email" id="loginEmail" required>
+                <br>
+                <label for="loginPassword">Password:</label>
+                <input class="form-control m-3"placeholder="enter your Password" type="password" id="loginPassword" required>
+                <br>
+                <button class="btn" type="button" onclick="login()">Login</button>
+              <button onclick="signIn()">sign in</button>
+            </form>
+        </div>
+    
+        <div id="home" style="display:none;">
+            <h2>Welcome, <span id="name"></span></h2>
+            <button type="button" onclick="logout()">Logout</button>
+        </div>
+
+  
+
+    </div>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>

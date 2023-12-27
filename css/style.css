@@ -1,0 +1,24 @@
+h2 {
+    color: blue;
+    padding: 20px 0px;
+}
+
+body {
+    background-color: aqua;
+}
+.btn{
+    color:white;
+    background-color: black;
+    color: black;
+    background-color: white;
+    
+
+    transition: 0.5s;
+}
+.btn:hover{
+    color:white;
+    background-color: black;
+}
+#registrationForm {
+    display:none;
+}
